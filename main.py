@@ -1,8 +1,16 @@
-"""Точка входа в программу."""
+"""Точка входа в приложение для визуализации случайного пути."""
+
 import tkinter as tk
+
 from src.app import App
 
-if __name__ == "__main__":
+
+def main() -> None:
+    """Создает главное окно Tkinter и запускает цикл приложения."""
     root = tk.Tk()
-    app = App(root)
+    App(root)
     root.mainloop()
+
+
+if __name__ == "__main__":
+    main()
